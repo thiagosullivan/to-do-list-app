@@ -1,38 +1,75 @@
+body {
+    background-color: #015368;
+    font-family: 'Sriracha', cursive;
+}
+
 .App {
-  text-align: center;
+    margin: auto;
+    max-width: 900px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+    font-size: 20px;
+    color: #12C6F3;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.input_div {
+    height: 30px;
+    position: relative;
 }
-
-.App-link {
-  color: #61dafb;
+.input_div input,
+.input_div button {
+    height: 100%;
+    outline: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input_div input {
+    padding: 5px 15px;
+    width: 70%;
+    height: 135%;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    
+}
+.input_div button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+.input_div button:hover {
+    background-color: #E03571;
+    color: #FFFFFF;
+}
+li {
+    font-size: 20px;
+}
+li button {
+    border-radius: 15px;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    font-weight: bold;
+    transition: all 150ms ease-in-out;
+}
+li button:hover {
+    background-color: #12C6F3;
+    color: #FFFFFF;
 }
